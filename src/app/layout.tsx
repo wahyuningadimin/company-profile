@@ -3,9 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Swiper from 'swiper';
 
-import Hero from "./hero/page";
+
 import Footer from "../component/footer";
 import Navbar from "@/component/navbar";
+import Hero from "./hero/page";
 
 
 
@@ -26,8 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <Hero />
-        {/* {children} */}
+        {children}
         <Footer />
         </body>
         

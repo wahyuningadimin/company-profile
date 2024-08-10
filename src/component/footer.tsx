@@ -1,41 +1,48 @@
 import { FaLeaf } from "react-icons/fa6";
-
+import Link from "next/link";
 export default function Footer() {
     return (
         <>
-<footer className="footer bg-base-200 text-base-content p-10">
-  <nav>
-    <h6 className="footer-title">Healthy&Hearty</h6>
-    <a className="link link-hover">About Us</a>
-    <a className="link link-hover">Our Team</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Our Products</h6>
-    <a className="link link-hover">Pricelist</a>
-    <a className="link link-hover">Testimonials</a>
-  </nav>
-  <form>
-    <h6 className="footer-title">Newsletter</h6>
+
+<footer className="bg-base-200 text-base-content py-10">
+  <div className="container mx-auto px-4 md:px-10">
+  <div className="flex flex-col md:flex-row md:justify-between">
+  <div className="flex flex-col mb-8 md:mb-0">
+    <h6 className="footer-title mb-4">Healthy&Hearty</h6>
+    <Link href={'/about-us'} className="link link-hover mb-2">About Us</Link>
+    <Link href={'/our-team'} className="link link-hover mb-2">Our Team</Link>
+  </div>
+  <div className="flex flex-col mb-8 md:mb-0">
+    <h6 className="footer-title mb-4">Our Products</h6>
+    <Link href={'/products'} className="link link-hover mb-2">Products</Link>
+    <a className="link link-hover mb-2">Testimonials</a>
+  </div>
+  <div className="flex flex-col">
+    <h6 className="footer-title mb-4">Newsletter</h6>
     <fieldset className="form-control w-100">
       <label className="label">
         <span className="label-text">Enter your email address</span>
       </label>
-      <div className="join">
+      <div className="flex flex-col md:flex-row md:space-x-2">
         <input
           type="text"
           placeholder="username@site.com"
-          className="input input-bordered join-item" />
+          className="input input-bordered join-item w-full mb:2 md:mb-0 md:w-auto" />
         <button className="btn btn-primary join-item">Subscribe</button>
       </div>
     </fieldset>
-  </form>
+    </div>
+    </div>
+    </div>
 </footer>
 <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
   <aside className="grid-flow-col items-center">
-    <FaLeaf />
+    {/* <FaLeaf /> */}
+    <p className="font-bold text-2xl">H&H</p>
     <ul>
-        <li className="font-bold">H&H</li>
-        <li>Your trusted healthy nutrious catering</li>
+        {/* <li className="font-bold text-3xl">H&H</li> */}
+        <li className="text-xs">Your trusted healthy nutrious catering</li>
+        <li className="text-xs">2024 H&H. All rights reserved.</li>
     </ul>
   </aside>
   <nav className="md:place-self-center md:justify-self-end">
