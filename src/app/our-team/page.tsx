@@ -17,8 +17,8 @@ interface Props {
 }
 
 const fetchUsers = async (): Promise<UserResponse> => {
-  const response = await axios.get<UserResponse>('https://randomuser.me/api/?results=9');
-  return response.data;
+  const response = await fetch('https://randomuser.me/api/?results=9');
+  return response.json();
 };
 
 const OurTeamPage = async () => {

@@ -1,6 +1,7 @@
 import { GetServerSideProps } from 'next';
 import axios from 'axios';
 import { UserResponse, User } from '../type';
+import Image from 'next/image';
 
 
 interface Props {
@@ -8,8 +9,8 @@ interface Props {
 }
 
 const fetchUsers = async (): Promise<UserResponse> => {
-  const response = await axios.get<UserResponse>('https://randomuser.me/api/?results=9');
-  return response.data;
+  const response = await fetch('https://randomuser.me/api/?results=9');
+  return response.json();
 };
 
 const Nutritionist = async () => {
@@ -22,7 +23,7 @@ const Nutritionist = async () => {
       <ul className='list-none p-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 px-20 pt-5 pb-10'>
         {users.map((user, index) => (
           <li key={index} className='flex flex-col items-center bg-white border border-gray-300 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300'>
-            <img src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} className='w-20 h-20 rounded-full mr-4'/>
+            <Image width={20} height={20} src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} className='w-20 h-20 rounded-full mr-4'/>
             <div className='text-center'>
             <p className='text-xl font-semibold'>{user.name.first} {user.name.last}</p>
             <p className='text-gray-600'>{user.cell}</p>
