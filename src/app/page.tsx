@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HeroCarousel from "./herocarousel/page";
 import Image from "next/image";
+import Blogpost from "./blog/page";
 export default function Hero() {
   return (
     <div>
@@ -324,7 +325,7 @@ export default function Hero() {
       <div className="py-8 px-4">
       <div className="flex w-full flex-col">
       <div className="divider text-2xl font-semibold text-center mb-6 mt-5 text-gray-700">Blog</div>
-        <p>Blog Posts</p>
+        <Blogpost />
         </div>
       </div>
     </div>
