@@ -104,7 +104,7 @@ export default function Hero() {
 
         {/* Why Us */}
       <section className="py-8 px-4">
-      <div className='px-10'>
+      <div className="px-10">
               <h3 className="text-2xl font-semibold mb-4 text-center text-gray-700">Why Us?</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li><strong>Nutritional Balance</strong>: You will get well-rounded, nutrient-dense meals that provide the essential vitamins, minerals & macronutrients your body needs.</li>
@@ -277,7 +277,7 @@ export default function Hero() {
       
 
       {/* Founders */}
-      <div className='py-8 px-4'>
+      <div className="py-8 px-4">
 <section >
 <div className="flex w-full flex-col">
 <div className="divider text-2xl font-semibold text-center mb-8 text-gray-700">Meet Our Founders</div>
