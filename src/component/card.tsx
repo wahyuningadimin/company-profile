@@ -13,7 +13,7 @@ interface ICardBlog {
 export const CardBlog: React.FC<ICardBlog> = ({ title, image, avatar, email, author, slug }) => {
     return (
         <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <img className="rounded-t-lg h-[200px] w-full " src={`https:${image}`} alt={title} />
+          <img className="rounded-t-lg h-[200px] w-auto" src={`https:${image}`} alt={title} />
           <div className="p-4">
               <h5 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">{splitStr(title, 50)}</h5>
               <div className="flex items-center my-5">
