@@ -65,7 +65,7 @@ export default async function BlogDetail({ params }: { params: { slug: string }}
                         ∙
                         <p className="text-[18px] max-md:text-[14px]">{formatDate(blog.fields.date)}</p>
                     </div>
-                    <img className="h-[350px] max-sm:h-[200px] max-md:h-[300px] w-full my-5 shadow" src={`https:${blog.fields.image.fields.file.url}`} alt={blog.fields.title} />
+                    <img className="h-[350px] max-sm:h-[200px] max-md:h-[300px] w-auto my-5 shadow" src={`https:${blog.fields.image.fields.file.url}`} alt={blog.fields.title} />
                     {documentToReactComponents(blog.fields.content, options)}
                 </div>
             </div>
