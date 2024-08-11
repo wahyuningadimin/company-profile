@@ -27,6 +27,7 @@ export default function Navbar() {
         <li><Link href={'/about-us'}>About Us</Link></li>
         <li><Link href={'/products'}>Products</Link></li>
         <li><Link href={'/our-team'}>Our Team</Link></li>
+        <li><Link href={'/blog'}>Blog</Link></li>
         <li><Link href={'/contact-us'}>Contact Us</Link></li>
       </ul>
     </div>
@@ -38,6 +39,7 @@ export default function Navbar() {
         <li><Link href={'/about-us'}>About Us</Link></li>
         <li><Link href={'/products'}>Products</Link></li>
         <li><Link href={'/our-team'}>Our Team</Link></li>
+        <li><Link href={'/blog'}>Blog</Link></li>
         <li><Link href={'/contact-us'}>Contact Us</Link></li>
     </ul>
   </div>
