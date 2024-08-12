@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Products() {
     return (
-        <div className="container mx-auto p-4 bg-stone-50">
+        <div className="container mx-auto p-4">
             <div className="flex justify-center items-center mb-10">
                 <h1 className="mt-5 pt-20 text-4xl font-bold">Products</h1>
             </div>

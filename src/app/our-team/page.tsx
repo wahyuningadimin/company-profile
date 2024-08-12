@@ -26,7 +26,7 @@ const OurTeamPage = async () => {
 
   return (
     <>
-    <div className="container mx-auto p-4 bg-stone-50">
+    <div className="container mx-auto p-4">
             <div className="flex justify-center items-center">
                 <h1 className="mt-5 pt-20 text-4xl font-bold">Our Team</h1>
             </div>

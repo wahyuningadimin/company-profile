@@ -2,6 +2,13 @@ import Link from "next/link";
 import HeroCarousel from "./herocarousel/page";
 import Image from "next/image";
 import Blogpost from "./blog/page";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+    title: "H&H | Home",
+    description: "home"
+};
 export default function Hero() {
   return (
     <div>
@@ -26,7 +33,7 @@ export default function Hero() {
       <HeroCarousel />
 
       {/* Overview */}
-      <div className="bg-stone-50">
+      <div>
       <section className="w-full py-5">
         <div className="py-8 px-4">
        <div className="flex w-full flex-col">

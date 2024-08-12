@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from 'react';
 
+
 interface FormData {
   name: string;
-  phone: string; // Added phone property
+  phone: string;
   email: string;
   message: string;
 }
@@ -41,7 +42,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-stone-50">
+    <div className="container mx-auto p-4">
       <div className="max-w-lg mx-auto pb-20">
         <div className="flex justify-center items-center">
           <h1 className="mt-5 pt-20 text-4xl font-bold">Contact Us</h1>

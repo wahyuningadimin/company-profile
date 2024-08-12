@@ -26,7 +26,7 @@ export default function Hero() {
       <HeroCarousel />
 
       {/* Overview */}
-      <div className="bg-stone-50">
+      <div>
       <section className="w-full py-5">
         <div className="py-8 px-4">
        <div className="flex w-full flex-col">

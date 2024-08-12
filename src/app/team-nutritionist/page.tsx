@@ -18,7 +18,7 @@ const Nutritionist = async () => {
 
   return (
     <>
-    <div className="container mx-auto p-4 bg-stone-50">
+    <div className="container mx-auto p-4">
       <h2 className="text-2xl font-semibold px-20 text-center">Nutritionist Team</h2>
       <ul className='list-none p-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 px-20 pt-5 pb-10'>
         {users.map((user, index) => (

@@ -111,10 +111,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+    title: "H&H | About Us",
+    description: "about us"
+};
 
 const Homepage: React.FC = () => {
   return (
-    <div className="container mx-auto p-4  bg-stone-50">
+    <div className="container mx-auto p-4  ">
             <div className="flex justify-center items-center mb-10">
                 <h1 className="mt-5 pt-20 text-4xl font-bold">About Us</h1>
             </div>
